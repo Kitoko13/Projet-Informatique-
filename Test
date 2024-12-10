@@ -53,6 +53,7 @@ int main()
             printf("%d ", D[i][j]);
         }
         printf("\n");
+printf (" La matrice est : ");
     }
 
     return 0;
