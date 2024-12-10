@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a,b,c,d;
+    printf("Nombres de colonnes de matA: ");
+    scanf("%d",&a);
+    printf("Nombres de lignes de matA: ");
+    scanf("%d",&b);
+    printf("Nombres de colonnes de matB: ");
+    scanf("%d",&c);
+    printf("Nombres de lignes de matB: ");
+    scanf("%d",&d);
+    int i,j,k;
+    int matA[i][j];
+    int matB[i][j];
+    if(a==d)
+    {
+        printf("Remplissez matA \n");
+        for(i=0;i<a;i++)
+        {
+            for(j=0;j<b;j++)
+            {
+                printf("L%dC%d= ",i,j);
+                scanf("%d",&matA[i][j]);
+                printf("\t");
+            }
+
+        }
+
+        printf("Remplissez matB \n");
+        for(i=0;i<c;i++)
+        {
+            for(j=0;j<d;j++)
+            {
+                printf("L%dC%d= ",i,j);
+                scanf("%d",&matB[i][j]);
+                printf("\t");
+            }
+
+        }
+    }
+    for(int i=0;i<4;i++)
+    {
+        for(int j=0;j<4;j++)
+        {
+            D[i][j]=0;
+            for(int k=0;k<4;k++)
+            {
+                D[i][j]=D[1][j] + A[i][k]*B[k][j];
+            }
+            printf("%d ", D[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
