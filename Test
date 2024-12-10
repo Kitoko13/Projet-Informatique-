@@ -3,7 +3,7 @@
 
 int main()
 {
-    int a,b,c,d;
+    int a,b,c,d,e,f,g,h,i,j;
     printf("Nombres de colonnes de matA: ");
     scanf("%d",&a);
     printf("Nombres de lignes de matA: ");
